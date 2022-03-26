@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val value = ai.metaData["ApiKey"]
 
         weatherApiService
-            .getWeather("Mumbai", value.toString())
+            .getWeather("Pune", value.toString())
             .enqueue(object : Callback<OpenWeatherMapResponseData> {
                 override fun onFailure(call: Call<OpenWeatherMapResponseData>, t: Throwable) {
                 }
